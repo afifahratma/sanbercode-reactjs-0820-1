@@ -1,0 +1,87 @@
+body {
+    background-image: url("img/pattern.jpg")
+}
+
+/* nav */
+header{
+    background: white;
+    position: sticky;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+
+nav{
+   float:right;
+   list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 10px;
+    
+}
+
+nav li:hover{
+    color: blue;
+}
+/* footer */
+footer{
+    background: #0d0d0d;
+    position: sticky;
+    padding: 10px;
+    width : 100%;
+}
+
+h5{
+    color: white;
+    text-align: center;
+}
+
+section{
+    margin: 0px 120px 0px 120px;
+    background-color: white;
+    border: 1px transparent;
+}
+
+#article-list{
+    padding: 30px;
+}
+
+h1 {
+    text-align : center;
+    padding-top: 2%;
+}
+
+/*bagian about*/
+.tentang{
+    margin: 2px 120px 0px 120px;
+    background-color: white;
+    border: 1px transparent;
+}
+
+#tombolback {
+    margin: 200px 120px 0px 120px;
+    
+}
+
+/* bagian kontak*/
+.kontak {
+    margin : 25px 100px 0px 100px;
+    background-color: white;
+    border: 1px transparent;
+}
+
+th {
+    width : 35%;
+    text-align: left;
+    
+}
+
+tr {
+    height : 5%;
+}
+
+#backbutton_c{
+    margin: 200px 120px 0px 120px;
+}
