@@ -1,5 +1,5 @@
+console.log("----Jawaban Soal 1-----")
 // SOAL 1
-
 var i = 2;
 //looping 1
 console.log("LOOPING PERTAMA");
@@ -53,5 +53,8 @@ console.log("----Jawaban Soal 5-----")
 
 //Soal 5
 var daftarBuah = ["2. Apel", "5. Jeruk", "3. Anggur", "4. Semangka", "1. Mangga"];
-daftarBuah.sort()
-console.log(daftarBuah.join("\n"))
+daftarBuah.sort();
+
+for(var i=0; i<daftarBuah.length; i++){
+console.log(daftarBuah[i]);
+}
