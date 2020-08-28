@@ -85,4 +85,6 @@ function tambahFilm(nama, durasi, genre, tahun) {
     dataFilm.push({ nama, durasi, genre, tahun })
 }
 tambahFilm("Harry Potter and the Half-Blood Prince", "2 jam 34 menit", "Fantasy", 2009);
+tambahFilm("Maze Runner: The Death Cure", "2 jam 23 menit", "Action, Sci-fi", 2018);
+tambahFilm("Miracle in Cell No.7", "2 jam 7 menit", "Drama, Comedy", 2013);
 console.log(dataFilm);
