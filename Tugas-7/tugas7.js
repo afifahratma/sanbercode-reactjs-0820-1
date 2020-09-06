@@ -3,24 +3,24 @@ console.log("----SOAL 1----")
     //release 0
 class Animal {
     constructor(name) {
-        this.name = name
-        this.legs = 4;
-        this.cold_blooded = false;
+        this._name = name
+        this._legs = 4;
+        this._cold_blooded = false;
     }
-    get leg() {
-        return this.legs
+    get name(){
+        return this._name
     }
-    set leg(leg) {
-        return this.legs = legs
+    get legs() {
+        return this._legs
     }
-    get coldBlooded() {
-        return this.cold_blooded
+    set legs(amount) {
+        return this._legs = amount 
     }
-    set coldBlooded(coldBlooded) {
-        return this.cold_blooded = false
+    get cold_blooded() {
+        return this._cold_blooded
     }
-}
 
+}
 var sheep = new Animal("shaun");
 
 console.log(sheep.name) // "shaun"
@@ -30,8 +30,8 @@ console.log(sheep.cold_blooded) // false
 //release 1
 // Code class Ape dan class Frog di sini
 class Frog extends Animal {
-    constructor() {
-        super()
+    constructor(name) {
+        super(name)
     }
     jump() {
         return "hop hop"
@@ -39,8 +39,8 @@ class Frog extends Animal {
 }
 
 class Ape extends Animal {
-    constructor(cold_blooded) {
-        super(cold_blooded)
+    constructor(name) {
+        super(name)
     }
     yell() {
         return "Auooo"
@@ -49,10 +49,19 @@ class Ape extends Animal {
 
 var sungokong = new Ape("kera sakti")
 sungokong.yell() // "Auooo"
+
+console.log(sungokong.name) // "shaun"
+sungokong.legs = 2
+console.log(sungokong.legs) 
+console.log(sungokong.cold_blooded)
 console.log(sungokong.yell())
 
 var kodok = new Frog("buduk")
 kodok.jump() // "hop hop"
+
+console.log(kodok.name) // "shaun"
+console.log(kodok.legs) // 4
+console.log(kodok.cold_blooded)
 console.log(kodok.jump())
 
 console.log("")

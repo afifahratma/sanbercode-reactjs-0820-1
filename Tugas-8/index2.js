@@ -8,11 +8,31 @@ var books = [
 ]
 
 // Lanjutkan code untuk menjalankan function readBooksPromise
-function buku() {
+/* function buku() {
     readBooksPromise(10000, books[0])
         .then((sisaWaktu) => readBooksPromise(sisaWaktu, books[1]))
         .then((sisaWaktu) => readBooksPromise(sisaWaktu, books[2]))
         .then((sisaWaktu) => readBooksPromise(sisaWaktu, books[3]))
         .catch((sisaWaktu) => console.log(sisaWaktu))
 }
-buku()
+buku() */
+
+var waktu = 10000
+
+readBooksPromise(waktu, books[0])
+    .then(function(time){
+        console.log('Sisa waktu ', time)
+        readBooksPromise(waktu, books[1])
+            .then(function(time){    
+            console.log('Sisa waktu ', time)
+                readBooksPromise(waktu, books[2])
+                    .then(function(time){
+                    console.log('Sisa waktu ', time)
+                    readBooksPromise(waktu, books[3])
+                    .then(function(time){
+                    console.log('Sisa waktu ', time)
+                })
+                })
+        })
+    })
+

@@ -15,7 +15,18 @@ console.log("\n")
 console.log("----Soal 2----")
     //SOAL 2
 let kalimat = ""
-let str1 = "saya"
+const tambahKata = (str) =>{
+    kalimat = `${kalimat} ${str}`
+}
+
+tambahKata("saya")
+tambahKata("adalah")
+tambahKata("seorang")
+tambahKata("frontend")
+tambahKata("developer")
+
+console.log(kalimat)
+/* let str1 = "saya"
 let str2 = "adalah"
 let str3 = "seorang"
 let str4 = "frontend"
@@ -26,6 +37,8 @@ function tambahKata(str1, str2, str3, str4, str5) {
 }
 
 console.log(tambahKata(str1, str2, str3, str4, str5))
+
+ */
 
 
 console.log("\n")

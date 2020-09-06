@@ -8,16 +8,23 @@ var books = [
 ]
 
 // Tulis code untuk memanggil function readBooks di sini
+var waktu = 10000
 
-/*function baca() {
-    readBooks(10000, books[0], function(x) { console.log(x) })
-    readBooks(10000, books[1], function(x) { console.log(x) })
-}*/
+readBooks(waktu, books[0], function (time) {
+    readBooks(time, books[1], function (time) {
+        readBooks(time, books[2], function(time){
+            readBooks(time, books[2], function(time){
+                return time
+            })
+        })
+    })
+
+})
 
 
 
 
-function baca(waktu, books, indeks = 0) {
+/* function baca(waktu, books, indeks = 0) {
     if (indeks < books.length) {
         readBooks(waktu, books[indeks], function(sisa) {
             if (sisa > 0) {
@@ -25,8 +32,8 @@ function baca(waktu, books, indeks = 0) {
             }
         })
     } else {
-        console.lof(10000, books)
+        console.log(10000, books)
     }
 
 }
-baca(10000, books)
+baca(10000, books) */
